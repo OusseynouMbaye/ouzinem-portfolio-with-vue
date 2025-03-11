@@ -3,12 +3,15 @@
 </template>
 
 <script setup>
-// pour faire descendre l'information du parent vers enfant
+// Pour recevoir des attributs = faire descendre l'information du parent vers enfant
 defineProps({
   label: String,
 });
 
+// 
 const model = defineModel();
+
+// permet d'emettre des evenements
 const emits = defineEmits(["check", "uncheck"]);
 
 const onChange = (event) => {
