@@ -2,6 +2,6 @@
 /* @plugin "daisyui" */
 @theme {
   /* --color-primary: oklch(0.408 0.123 38.172); */
-  --color-primary: oklch(21.96% 0.1342 264.16); /*#000957; */
-  --color-secondary: #ffeb00;
+  --color-primary: '#000957 ' /*#000957; oklch(21.96% 0.1342 264.16)*/
+    --color-secondary: '#ffeb00';
 }
