@@ -9,6 +9,18 @@
   <body>
     <div id="app"></div>
     <script type="module" src="/src/main.js"></script>
-    <script type="module" src="/src/utils/theme.js"></script>
+    <!-- <script src="/src/utils/theme.js"></script> -->
+    <script>
+      const theme = localStorage.getItem('theme');
+      if (!theme) {
+        //  if no theme is set, default to dark mode
+        document.documentElement.classList.add('dark');
+        localStorage.setItem('theme', 'dark');
+      } else if (theme === 'dark') {
+        document.documentElement.classList.add('dark');
+      } else if (theme === 'light') {
+        document.documentElement.classList.remove('dark');
+      }
+    </script>
   </body>
 </html>

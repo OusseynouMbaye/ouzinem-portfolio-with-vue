@@ -10,4 +10,3 @@ const NavBar = defineAsyncComponent(
   () => import('@/components/layout/NavBar.vue')
 );
 </script>
-<style scoped></style>
