@@ -5,6 +5,8 @@
   /* --color-primary: oklch(0.408 0.123 38.172); */
   --color-primary: #000957;
   --color-secondary: #ffeb00;
+  --color-whiteBg: #d4ebf8;
+  --color-darkBg: #080326;
 }
 
 /*#000957; oklch(21.96% 0.1342 264.16)*/
